@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-10",
+  "dataset": "Hello-SimpleAI/HC3",
+  "dataset_card": "https://huggingface.co/datasets/Hello-SimpleAI/HC3",
+  "official_project": "https://github.com/Hello-SimpleAI/chatgpt-comparison-detection",
+  "license_note": "HC3 says source-specific stricter licences still apply; no answer texts are redistributed.",
+  "selection": "First human answer and first ChatGPT answer from each eligible paired row; 40–1500 words each; deterministic random sample by subset.",
+  "seed": 20261110,
+  "human_samples": 1200,
+  "ai_samples": 1200,
+  "files": [
+    {
+      "subset": "reddit_eli5",
+      "file": "reddit_eli5.jsonl",
+      "download_url": "https://huggingface.co/datasets/Hello-SimpleAI/HC3/resolve/main/reddit_eli5.jsonl",
+      "sha256": "448cebaf7fdf27560daf6cc87cc1464be4988cf8110c0ec40c40b21c2c0193db",
+      "bytes": 55448695,
+      "eligible_rows": 11759,
+      "selected_pairs": 700
+    },
+    {
+      "subset": "wiki_csai",
+      "file": "wiki_csai.jsonl",
+      "download_url": "https://huggingface.co/datasets/Hello-SimpleAI/HC3/resolve/main/wiki_csai.jsonl",
+      "sha256": "4f78105c72e7edd3b619b3b44abac1e6f8bdb42211f22e43191d4dae889e1968",
+      "bytes": 2198039,
+      "eligible_rows": 731,
+      "selected_pairs": 400
+    },
+    {
+      "subset": "open_qa",
+      "file": "open_qa.jsonl",
+      "download_url": "https://huggingface.co/datasets/Hello-SimpleAI/HC3/resolve/main/open_qa.jsonl",
+      "sha256": "4d968e1e1473cbdf5978024872768f0c6f27dacf681f35166dc191733dccd664",
+      "bytes": 2910828,
+      "eligible_rows": 232,
+      "selected_pairs": 100
+    }
+  ],
+  "summary": {
+    "reddit_eli5": {
+      "human": {
+        "samples": 700,
+        "median_words": 115.0,
+        "mean_question_echo_jaccard": 0.0663,
+        "generic_opening": 4,
+        "numbered_list": 0,
+        "bullet_list": 6,
+        "closing_formula": 6,
+        "first_person": 305,
+        "second_person": 449,
+        "example_phrase": 56,
+        "hedge": 220
+      },
+      "chatgpt": {
+        "samples": 700,
+        "median_words": 177.0,
+        "mean_question_echo_jaccard": 0.1224,
+        "generic_opening": 35,
+        "numbered_list": 8,
+        "bullet_list": 0,
+        "closing_formula": 89,
+        "first_person": 170,
+        "second_person": 328,
+        "example_phrase": 166,
+        "hedge": 374
+      }
+    },
+    "wiki_csai": {
+      "human": {
+        "samples": 400,
+        "median_words": 173.0,
+        "mean_question_echo_jaccard": 0.1042,
+        "generic_opening": 0,
+        "numbered_list": 0,
+        "bullet_list": 0,
+        "closing_formula": 6,
+        "first_person": 20,
+        "second_person": 4,
+        "example_phrase": 52,
+        "hedge": 118
+      },
+      "chatgpt": {
+        "samples": 400,
+        "median_words": 188.5,
+        "mean_question_echo_jaccard": 0.1193,
+        "generic_opening": 0,
+        "numbered_list": 0,
+        "bullet_list": 0,
+        "closing_formula": 34,
+        "first_person": 39,
+        "second_person": 19,
+        "example_phrase": 63,
+        "hedge": 120
+      }
+    },
+    "open_qa": {
+      "human": {
+        "samples": 100,
+        "median_words": 50.0,
+        "mean_question_echo_jaccard": 0.0804,
+        "generic_opening": 0,
+        "numbered_list": 0,
+        "bullet_list": 0,
+        "closing_formula": 0,
+        "first_person": 2,
+        "second_person": 2,
+        "example_phrase": 1,
+        "hedge": 10
+      },
+      "chatgpt": {
+        "samples": 100,
+        "median_words": 134.5,
+        "mean_question_echo_jaccard": 0.1305,
+        "generic_opening": 1,
+        "numbered_list": 0,
+        "bullet_list": 0,
+        "closing_formula": 3,
+        "first_person": 5,
+        "second_person": 12,
+        "example_phrase": 5,
+        "hedge": 25
+      }
+    },
+    "all": {
+      "human": {
+        "samples": 1200,
+        "median_words": 121.0,
+        "mean_question_echo_jaccard": 0.0801,
+        "generic_opening": 4,
+        "numbered_list": 0,
+        "bullet_list": 6,
+        "closing_formula": 12,
+        "first_person": 327,
+        "second_person": 455,
+        "example_phrase": 109,
+        "hedge": 348
+      },
+      "chatgpt": {
+        "samples": 1200,
+        "median_words": 178.0,
+        "mean_question_echo_jaccard": 0.1221,
+        "generic_opening": 36,
+        "numbered_list": 8,
+        "bullet_list": 0,
+        "closing_formula": 126,
+        "first_person": 214,
+        "second_person": 359,
+        "example_phrase": 234,
+        "hedge": 519
+      }
+    }
+  }
+}
